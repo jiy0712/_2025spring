@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="t1" class="kr.hs.study.beans.TestBean" lazy-init="true"/>
+<!--    TestBean t1=new TestBean();-->
+
+  <bean id="t2" class="kr.hs.study.beans.TestBean" scope="prototype"/>
+<!--    TestBean t2=new TestBean(); 인데 가져올때마다 매번 객체가 생성된다-->
+
+</beans>

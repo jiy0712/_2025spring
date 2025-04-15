@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--TestBean1의 객체 t1생성하라고 명령해줘-->
+<bean id="t1" class="kr.hs.study.beans.TestBean1" lazy-init="true"
+                                      init-method="init_Method" destroy-method="destroy_Method"/>
+</beans>

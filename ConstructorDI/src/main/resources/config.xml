@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="t1" class="kr.hs.study.beans.TestBean1">
+      <constructor-arg value="2" type="int" />
+<!--       TestBean1 t=new TestBean1(2);-->
+   </bean>
+    <bean id="t2" class="kr.hs.study.beans.TestBean1">
+        <constructor-arg value="3.3" type="double" />
+    </bean>
+
+    <bean id="t3" class="kr.hs.study.beans.TestBean1">
+        <constructor-arg value="Jane" type="java.lang.String" />
+    </bean>
+    <bean id="t4" class="kr.hs.study.beans.TestBean1">
+        <constructor-arg value="Kei" type="java.lang.String" index="2" />
+        <constructor-arg value="7" type="int" index="0"/>
+        <constructor-arg value="7.7" type="double" index="1"/>
+    </bean>
+</beans>

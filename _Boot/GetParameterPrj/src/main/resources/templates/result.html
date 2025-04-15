@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+        color:blue;
+        border:1px solid gray;
+        }
+    </style>
+</head>
+<body>
+  <h1 th:text="'Result'"></h1>
+   아이디: <h2  th:text="${login.userId}"></h2>
+   비밀번호:<h2 th:text="${login.userPass}"></h2>
+
+</body>
+</html>

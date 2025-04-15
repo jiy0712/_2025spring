@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--1. DataBean2의 객체 생성   2. 주소값을 propery 주입-->
+<!--    <bean id="d2" class="kr.hs.study.beans.DataBean2"/>-->
+<!--  <bean id="t2" class="kr.hs.study.beans.TestBean2">-->
+<!--      <property name="data1" ref="d2"/>-->
+<!--      <property name="data2" ref="d2"/>-->
+<!--  </bean>-->
+
+    <bean id="t2" class="kr.hs.study.beans.TestBean2">
+        <property name="data1">
+            <bean class="kr.hs.study.beans.DataBean2"/>
+        </property>
+    </bean>
+
+</beans>

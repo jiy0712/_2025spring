@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 th:text="'Welcome urlMapping'"></h1>
+  <a th:href="@{/test1}">test1 GET요청</a><br/>
+  <a th:href="@{/sub/test2}">test2 GET요청</a><br/>
+  <a th:href="@{/sub/test3}">test3 GET요청</a><br/>
+  <a th:href="@{/sub/test4}">test4 GET요청</a><br/>
+<form method="post" action="/test5">
+    ID:<input type="text" /><br/>
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>

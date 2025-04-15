@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:replace="~{fragments/menu::menuFragment}"></th:block>
+<form method="post" action="input_done">
+    Input Number:<input type="text" name="num"><br/>
+    <button type="submit">입력완료</button>
+</form>
+</body>
+</html>
